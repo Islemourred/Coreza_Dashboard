@@ -7,11 +7,13 @@
 ## 📝 Commands Executed
 
 1. **Remote configured:**
+
    ```bash
    git remote set-url origin https://github.com/Islemourred/Coreza_Dashboard.git
    ```
 
 2. **Branch renamed to main:**
+
    ```bash
    git branch -M main
    ```
@@ -30,6 +32,7 @@ If the push fails due to authentication, you'll need to authenticate with GitHub
 ### **Option 1: Personal Access Token (Recommended)**
 
 1. **Generate a Personal Access Token:**
+
    - Go to: https://github.com/settings/tokens
    - Click "Generate new token (classic)"
    - Give it a name: "Coreza Dashboard"
@@ -38,6 +41,7 @@ If the push fails due to authentication, you'll need to authenticate with GitHub
    - **Copy the token immediately** (you won't see it again)
 
 2. **Push with token:**
+
    ```bash
    git push https://YOUR_TOKEN@github.com/Islemourred/Coreza_Dashboard.git main
    ```
@@ -54,11 +58,13 @@ If the push fails due to authentication, you'll need to authenticate with GitHub
 ### **Option 2: SSH Key**
 
 1. **Generate SSH key:**
+
    ```bash
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
 
 2. **Add to GitHub:**
+
    - Copy the public key: `cat ~/.ssh/id_ed25519.pub`
    - Go to: https://github.com/settings/keys
    - Click "New SSH key"
@@ -113,6 +119,7 @@ git push -u origin main
 ## 📦 What Will Be Pushed
 
 ### **Complete CRM System:**
+
 - ✅ 5 Role-based dashboards
 - ✅ 5 Custom sidebar menus
 - ✅ 15+ Feature-rich page components
@@ -122,6 +129,7 @@ git push -u origin main
 - ✅ Complete documentation
 
 ### **File Structure:**
+
 ```
 template/
 ├── src/
@@ -150,11 +158,13 @@ template/
 **Repository URL:** https://github.com/Islemourred/Coreza_Dashboard
 
 **Clone Command:**
+
 ```bash
 git clone https://github.com/Islemourred/Coreza_Dashboard.git
 ```
 
 **Install & Run:**
+
 ```bash
 cd Coreza_Dashboard
 npm install
@@ -166,11 +176,13 @@ npm start
 ## ✨ Key Features Being Pushed
 
 1. **Role-Based System:**
+
    - 5 different user roles
    - Custom sidebar for each role
    - Role-specific pages and features
 
 2. **Production-Ready Pages:**
+
    - User Management
    - Pipeline Overview
    - Team Performance
@@ -180,6 +192,7 @@ npm start
    - And 10+ more...
 
 3. **No Authentication Required:**
+
    - Direct URL access enabled
    - Perfect for demos and testing
 
@@ -197,6 +210,7 @@ After pushing, verify by visiting:
 https://github.com/Islemourred/Coreza_Dashboard
 
 You should see:
+
 - All source files
 - Documentation files
 - README.md
@@ -208,11 +222,13 @@ You should see:
 ## 💡 Next Steps After Push
 
 1. **Update README.md on GitHub:**
+
    - Add project description
    - Add screenshots
    - Add setup instructions
 
 2. **Enable GitHub Pages (Optional):**
+
    - Go to repository Settings
    - Navigate to Pages
    - Select source branch
@@ -228,15 +244,19 @@ You should see:
 ## 🆘 Troubleshooting
 
 ### **Error: Permission denied**
+
 → Check your GitHub authentication (use Personal Access Token)
 
 ### **Error: Repository not found**
+
 → Verify the repository exists and you have access
 
 ### **Error: Updates were rejected**
+
 → Use `git push --force` (be careful, this overwrites remote)
 
 ### **Large files warning**
+
 → Node_modules is already in .gitignore, so it won't be pushed
 
 ---
@@ -244,6 +264,7 @@ You should see:
 ## 📞 Support
 
 If you encounter any issues:
+
 1. Check GitHub authentication
 2. Verify repository access
 3. Try GitHub Desktop
