@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "first_name": "Alexander",
+    "last_name": "Orton",
+    "user_name": "Alex@mdorton",
+    "company": "Apple Inc.",
+    "country": "USA",
+    "designation": "Developer",
+    "trClassName": "border-bottom-secondary",
+    "imgPath": "dashboard/default/01.png",
+    "badgeColor":"danger",
+    "language":"php"
+  },
+  {
+    "id": 2,
+    "first_name": "John Deo",
+    "last_name": "Deo",
+    "user_name": "John@johndeo",
+    "company": "Hewlett packard",
+    "country": "USA",
+    "designation": "Designer",
+    "trClassName": "border-bottom-success",
+    "imgPath": "dashboard/default/02.png",
+    "badgeColor":"primary",
+    "language":"Html"
+  },
+  {
+    "id": 3,
+    "first_name": "Randy Orton",
+    "last_name": "the Bird",
+    "user_name": "Randy@twitter",
+    "company": "Microsoft",
+    "country": "UK",
+    "designation": "Designer",
+    "trClassName": "border-bottom-info",
+    "imgPath": "dashboard/default/03.png",
+    "badgeColor":"danger",
+    "language":"Pug"
+  },
+  {
+    "id": 4,
+    "first_name": "Randy Mark",
+    "last_name": "Ottandy",
+    "user_name": "Mark@mdothe",
+    "company": "Tata Ltd.",
+    "country": "AUS",
+    "designation": "Developer",
+    "trClassName": "border-bottom-warning",
+    "imgPath": "dashboard/default/04.png",
+    "badgeColor":"success",
+    "language":"React"
+  },
+  {
+    "id": 5,
+    "first_name": "Ram Jacob",
+    "last_name": "Thornton",
+    "user_name": "Ram@twitter",
+    "company": "Wipro Ltd.",
+    "country": "IND",
+    "designation": "Developer",
+    "trClassName": "border-bottom-danger",
+    "imgPath": "dashboard/default/05.png",
+    "badgeColor":"primary",
+    "language":"Vue"
+  },
+  {
+    "id": 6,
+    "first_name": "Alexander",
+    "last_name": "Orton",
+    "user_name": "ander@mdorton",
+    "company": "Info Ltd.",
+    "country": "USA",
+    "designation": "Developer",
+    "trClassName": "border-bottom-dark",
+    "imgPath": "dashboard/default/01.png",
+    "badgeColor":"success",
+    "language":"Vue"
+  }
+]

@@ -62,9 +62,9 @@ out
 .nuxt
 dist
 
-# Gatsby files
+# Gatsby files (commented out - we need public/ for React)
 .cache/
-public
+# public
 
 # vuepress build output
 .vuepress/dist

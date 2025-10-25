@@ -1,0 +1,42 @@
+[
+    {
+    "id": 1,
+    "title": "Tivo admin",
+    "files": "20 files",
+    "time": " 2 Hour ago",
+    "foldericon": "f-44 fa fa-file-archive-o txt-warning",
+    "filename": "Logo.psd",
+    "fileicon": "f-22 fa fa-folder font-info",
+    "time2": "2 Hour ago, 2.0 MB"
+  },
+  {
+    "id": 2,
+    "title": "Viho admin",
+    "files": "10 files",
+    "time": " 1 Hour ago",
+    "foldericon": "f-44 fa fa-folder txt-warning",
+    "filename": "Backend.xls",
+    "fileicon": "f-22 fa fa-file-excel-o font-success",
+    "time2": "2 Day ago, 3.00 GB"
+  },
+  {
+    "id": 3,
+    "title": "Unice admin",
+    "files": "25 files",
+    "time": " 3 Day ago",
+    "foldericon": "f-44 fa fa-file-archive-o txt-warning",
+    "filename": "Project.zip",
+    "fileicon": "f-22 fa fa-file-archive-o font-warning",
+    "time2": "3 Hour ago, 1.90 GB"
+  },
+  {
+    "id": 4,
+    "title": "Koho admin",
+    "files": "10 files",
+    "time": " 1 Day ago",
+    "foldericon": "f-44 fa fa-folder txt-warning",
+    "filename": "Report.txt",
+    "fileicon": "f-22 fa fa-folder font-info",
+    "time2": "1 Day ago, 0.90 KB"
+  }
+]

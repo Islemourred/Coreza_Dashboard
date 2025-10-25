@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "image": "user/1.jpg",
+    "name": "Pork Lorn",
+    "type": "Inbox",
+    "text": "Account recovered successfully. Welcome back to your accountIf you suspect you were locked out of your account because of changes made.",
+    "time": "09:59 AM",
+    "favourite": "like"
+  },
+  {
+    "id": 2,
+    "image": "user/2.png",
+    "name": "Dee Deo",
+    "type": "Inbox",
+    "text": "Art by Jack Daly Apply now: Graphic Designer @Shell The world is changing fast, and Shell is changing too–not only to keep up with the external pace.",
+    "time": "08:59 AM",
+    "favourite": ""
+  },
+  {
+    "id": 3,
+    "image": "user/3.jpg",
+    "name": "Peg Legge",
+    "type": "Inbox",
+    "text": "Your password was changed. The password for your Google account was changed. If you didnt change it, you should recover your account.",
+    "time": "07:59 AM",
+    "favourite": ""
+  },
+  {
+    "id": 4,
+    "image": "user/4.jpg",
+    "name": "Olive Yew",
+    "type": "Inbox",
+    "text": "Looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.",
+    "time": "05:59 AM",
+    "favourite": "like"
+  },
+  {
+    "id": 5,
+    "image": "user/5.jpg",
+    "name": "Pork Lorn",
+    "type": "Inbox",
+    "text": "Art by Jack Daly Apply now: Graphic Designer @Shell The world is changing fast, and Shell is changing too–not only to keep up with the external pace.",
+    "time": "09:59 AM",
+    "favourite": "like"
+  },
+  {
+    "id": 6,
+    "image": "user/6.jpg",
+    "name": "Dee Deo",
+    "type": "Inbox",
+    "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
+    "time": "08:59 AM",
+    "favourite": ""
+  },
+  {
+    "id": 7,
+    "image": "user/7.jpg",
+    "name": "Peg Park",
+    "type": "Inbox",
+    "text": "A Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
+    "time": "07:59 AM",
+    "favourite": "like"
+  },
+  {
+    "id": 8,
+    "image": "user/3.png",
+    "name": "Clyde Stale",
+    "type": "Inbox",
+    "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+    "time": "04:59 AM",
+    "favourite": ""
+  },
+  {
+    "id": 9,
+    "image": "user/6.jpg",
+    "name": "Art Decco",
+    "type": "Inbox",
+    "text": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
+    "time": "02:27 AM",
+    "favourite": "like"
+  },
+  {
+    "id": 10,
+    "image": "user/7.jpg",
+    "name": "Hugo First",
+    "type": "Inbox",
+    "text": "Welcome back to your account If you suspect you were locked out of your account because of changes made. Account recovered successfully.",
+    "time": "12:02 PM",
+    "favourite": ""
+  },
+  {
+    "id": 11,
+    "image": "user/8.jpg",
+    "name": "Col Fays",
+    "type": "Inbox",
+    "text": "The password for your Google account was changed. If you didn't change it, you should recover your account.",
+    "time": "03:09 AM",
+    "favourite": "like"
+  }
+]

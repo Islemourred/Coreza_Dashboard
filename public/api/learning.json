@@ -1,0 +1,90 @@
+[
+    {
+        "Id": 1,
+        "img": "faq/1.jpg",
+        "date": "Jan 08, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn."
+        ],
+        "title": "Web Design"
+    },
+    {
+        "Id": 2,
+        "img": "faq/2.jpg",
+        "date": "Feb 18, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "This course is designed to start you on a path toward future studies in web development and design."
+        ],
+        "title": "Web Development"
+    },
+    {
+        "Id": 3,
+        "img": "faq/3.jpg",
+        "date": "Aug 04, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "User interface design (UI) is the design for machines and software, such as mobile devices, computers."
+        ],
+        "title": "UI Design"
+    },
+    {
+        "Id": 4,
+        "img": "faq/4.jpg",
+        "date": "May 21, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn."
+        ],
+        "title": "UX Design"
+    },
+    {
+        "Id": 5,
+        "img": "faq/3.jpg",
+        "date": "June 08, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "User Experience design is the design for machines and software, such as mobile devices, computers."
+        ],
+        "title": "UI Design"
+    },
+    {
+        "Id": 6,
+        "img": "faq/4.jpg",
+        "date": "Sept 19, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "Graphic design is a craft where professionals create visual content to communicate messages."
+        ],
+        "title": "Web Design"
+    },
+    {
+        "Id": 7,
+        "img": "faq/1.jpg",
+        "date": "Oct 25, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "This course is designed to start you on a path toward future studies in web development and design."
+        ],
+        "title": "UX Design"
+    },
+    {
+        "Id": 8,
+        "img": "faq/2.jpg",
+        "date": "Dec 15, 2023",
+        "writer": "Admin",
+        "hits": "0",
+        "short_description": [
+            "A content developer is typically professional who creates digital and physical content blog posts."
+        ],
+        "title": "Web Development"
+    }
+]
