@@ -29,7 +29,6 @@
     "i18next": "^25.6.0",
     "i18next-browser-languagedetector": "^6.1.5",
     "latest-version": "^7.0.0",
-    "node-sass": "^7.0.1",
     "pigeon-maps": "^0.21.0",
     "react": "^17.0.2",
     "react-ace": "^10.1.0",
