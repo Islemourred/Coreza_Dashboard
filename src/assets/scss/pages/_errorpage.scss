@@ -1,0 +1,432 @@
+/**=====================
+    48. Error-page CSS Start
+==========================**/
+.error-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: $white;
+  &.maintenance-bg {
+    background-image: url(../../images/other-images/maintenance-bg.jpg);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+  }
+  svg.maintanance {
+    height: 420px;
+  }
+  svg {
+    width: 100%;
+    height: 380px;
+  }
+  .maintenance-heading {
+    margin-top: 20px;
+    .headline {
+      font-size: 99px;
+      font-weight: 900;
+      letter-spacing: 10px;
+      color: $primary-color;
+      z-index: 2;
+      position: relative;
+    }
+  }
+  .error-heading {
+    margin-top: 115px;
+    .headline {
+      font-size: 285px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-top: -130px;
+    }
+  }
+  .error {
+    margin: 70px 0 100px;
+    color: $black;
+    .error-title {
+      font-size: 9.5rem;
+      color: $white;
+      text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.32);
+    }
+    .line-bottom {
+      width: 10%;
+      height: 5px;
+      background-color: $warning-color;
+      border: none;
+    }
+    .c-white {
+      color: $white;
+    }
+    .error-btn {
+      text-align: center;
+    }
+  }
+  .svg-wrraper {
+    margin-bottom: 35px;
+    svg {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 440px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .sub-content {
+    font-size: 18px;
+    color: $theme-body-font-color;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-weight: normal;
+    z-index: 3;
+    margin-bottom: 35px;
+  }
+}
+// error pages
+.error-1 {
+  .shp0 {
+    fill: $primary-color;
+  }
+  .shp1 {
+    fill: #ebebeb;
+  }
+  .shp2 {
+    fill: #263238;
+  }
+  .shp3 {
+    fill: #e6e6e6;
+  }
+  .shp4 {
+    fill: $white;
+  }
+  .shp5 {
+    opacity: 0.6;
+    fill: $white;
+  }
+  .shp6 {
+    opacity: 0.2;
+    fill: $white;
+  }
+  .shp7 {
+    fill: #f5f5f5;
+  }
+  .shp8 {
+    opacity: 0.1;
+  }
+}
+.error-2 {
+  .shp0 {
+    fill: #f5f5f5;
+  }
+  .shp1 {
+    fill: $white;
+  }
+  .shp2 {
+    fill: #263238;
+  }
+  .shp3 {
+    fill: $primary-color;
+  }
+  .shp4 {
+    fill: $primary-color;
+    opacity: 0.5;
+  }
+  .shp5 {
+    fill: $white;
+    opacity: 0.2;
+  }
+  .shp6 {
+    fill: $white;
+    opacity: 0.4;
+  }
+  .shp7 {
+    opacity: 0.1;
+  }
+  .shp8 {
+    opacity: 0.3;
+  }
+  .shp9 {
+    fill: #f0f0f0;
+  }
+}
+.error-3 {
+  .shp0 {
+    fill: $primary-color;
+  }
+  .shp1 {
+    fill: #ebebeb;
+  }
+  .shp2 {
+    fill: #263238;
+  }
+  .shp3 {
+    fill: $white;
+  }
+  .shp4 {
+    opacity: 0.3;
+  }
+  .shp5 {
+    fill: $white;
+    opacity: 0.3;
+  }
+  .shp6 {
+    fill: $secondary-color;
+  }
+  .shp7 {
+    opacity: 0.1;
+  }
+  .shp8 {
+    fill: #c7c7c7;
+  }
+  .shp9 {
+    opacity: 0.2;
+  }
+  .shp10 {
+    fill: #a6a6a6;
+  }
+  .shp11 {
+    fill: $white;
+    opacity: 0.5;
+  }
+}
+.error-4 {
+  .shp0 {
+    fill: #e0e0e0;
+  }
+  .shp1 {
+    fill: #46476c;
+  }
+  .shp2 {
+    fill: $primary-color;
+  }
+  .shp3 {
+    opacity: 0.4;
+    mix-blend-mode: soft-light;
+    fill: $white;
+  }
+  .shp4 {
+    opacity: 0.051;
+    mix-blend-mode: multiply;
+    fill: $black;
+  }
+  .shp5 {
+    opacity: 0.4;
+    fill: $white;
+  }
+  .shp6 {
+    opacity: 0.2;
+    fill: $black;
+  }
+  .shp7 {
+    opacity: 0.102;
+    fill: $black;
+  }
+  .shp8 {
+    fill: $white;
+  }
+  .shp9 {
+    opacity: 0.2;
+    fill: $white;
+  }
+  .shp10 {
+    fill: $black;
+  }
+  .shp11 {
+    opacity: 0.149;
+    fill: $black;
+  }
+  .shp12 {
+    fill: #37474f;
+  }
+  .shp13 {
+    fill: #263238;
+  }
+  .shp14 {
+    opacity: 0.302;
+    fill: $black;
+  }
+  .shp15 {
+    opacity: 0.502;
+    fill: $black;
+  }
+  .shp16 {
+    opacity: 0.702;
+    fill: $black;
+  }
+  .shp17 {
+    fill: #fafafa;
+  }
+  .shp18 {
+    fill: #ffa8a7;
+  }
+  .shp19 {
+    fill: #f28f8f;
+  }
+}
+.unlock-1 {
+  .shp0 {
+    fill: #ebebeb;
+  }
+  .shp1 {
+    fill: #263238;
+  }
+  .shp2 {
+    fill: $white;
+    opacity: 0.5;
+  }
+  .shp3 {
+    fill: $white;
+  }
+  .shp4 {
+    fill: $primary-color;
+  }
+  .shp5 {
+    opacity: 0.2;
+  }
+  .shp6 {
+    opacity: 0.3;
+  }
+  .shp7 {
+    fill: #f5f5f5;
+  }
+  .shp8 {
+    fill: #fafafa;
+  }
+  .shp9 {
+    fill: #e6e6e6;
+  }
+  .shp10 {
+    fill: #f0f0f0;
+  }
+  .shp11 {
+    fill: #ffc3bd;
+  }
+  .shp12 {
+    fill: #ed847e;
+  }
+}
+.maintanance {
+  .shp0 {
+    fill: $primary-color;
+  }
+  .shp1 {
+    opacity: 0.2;
+  }
+  .shp2 {
+    fill: #263238;
+  }
+  .shp3 {
+    fill: $white;
+  }
+  .shp4 {
+    fill: none;
+  }
+  .shp5 {
+    fill: #e6e6e6;
+  }
+  .shp6 {
+    fill: #455a64;
+  }
+  .shp7 {
+    fill: #ffa8a7;
+  }
+  .shp8 {
+    fill: $white;
+    opacity: 0.2;
+  }
+  .shp9 {
+    fill: #37474f;
+  }
+  .shp10 {
+    fill: #ffa8a7;
+  }
+  .shp11 {
+    opacity: 0.3;
+  }
+  .shp12 {
+    fill: #692b2b;
+  }
+  .shp13 {
+    opacity: 0.1;
+  }
+  .shp14 {
+    fill: #f28f8f;
+  }
+  .shp15 {
+    fill: #f5f5f5;
+  }
+  .shp16 {
+    fill: $white;
+  }
+  .shp17 {
+    fill: #fafafa;
+  }
+  .shp18 {
+    fill: #ebebeb;
+  }
+  .shp19 {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+@media (max-width: 1199px) {
+  .error-wrapper {
+    svg {
+      height: 320px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .error-wrapper {
+    svg {
+      height: 280px;
+    }
+    .svg-wrraper {
+      svg {
+        height: 450px;
+      }
+    }
+    .sub-content {
+      line-height: 25px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .error-wrapper {
+    h3 {
+      margin-bottom: 18px;
+    }
+    .sub-content {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .error-wrapper {
+    .svg-wrraper {
+      margin-bottom: 25px;
+      svg {
+        height: 380px;
+      }
+    }
+    .sub-content {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .error-wrapper {
+    .svg-wrraper {
+      svg {
+        height: auto;
+      }
+    }
+  }
+}
+/**=====================
+    48. Error-page CSS Ends
+==========================**/

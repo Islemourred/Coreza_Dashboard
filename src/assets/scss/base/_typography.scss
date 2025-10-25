@@ -1,0 +1,359 @@
+/**=====================
+    02. Typography css start
+==========================**/
+//Custom css Start
+body {
+  font-size: $body-font-size;
+  overflow-x: hidden;
+  font-family: $font-Montserrat;
+  color: $theme-body-font-color;
+  background-color: $body-color;
+}
+ul {
+  padding-left: $ul-padding-left;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+* a {
+  color: var(--theme-default);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+a {
+  &:hover {
+    text-decoration: none;
+    color: var(--theme-default);
+  }
+  &[class*="badge-"] {
+    &:hover {
+      color: $white;
+    }
+  }
+}
+.btn {
+  font-size: 14px;
+}
+*.btn:focus {
+  box-shadow: $btn-focus-box-shadow !important;
+}
+p {
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  letter-spacing: $paragraph-letter-spacing;
+}
+hr {
+  background-color: $light-gray;
+  border: 1px solid $light-gray;
+  opacity: 1;
+}
+code {
+  color: $code-tag-color !important;
+  background-color: $code-tag-bg-color;
+  padding: $code-tag-padding;
+  margin: $code-tag-margin;
+  border-radius: $code-tag-border-radious;
+  text-transform: none;
+}
+.d-flex {
+  .flex-grow-1 {
+    flex: 1;
+  }
+}
+blockquote {
+  border-left: $blockquote-border;
+  padding: $blockquote-padding;
+  &.text-end{
+    border-right: $blockquote-border;
+    border-left: unset;
+  }
+  &.text-center{
+    border: 0;
+  }
+}
+.figure {
+  &.text-center {
+    blockquote {
+      border: none !important;
+    }
+  }
+  &.text-end {
+    blockquote {
+      border-left: none !important;
+      border-right: $blockquote-border;
+    }
+  }
+}
+.media{
+  display: flex;
+  align-items: flex-start;
+  .media-body{
+    flex: 1 1;
+  }
+}
+.row {
+  > div {
+    position: relative;
+  }
+}
+:focus {
+  outline-color: $all-focus-outline-color;
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+svg {
+  vertical-align: baseline;
+}
+input {
+  &:focus {
+    outline-color: $transparent-color;
+  }
+}
+label {
+  margin-bottom: 0.5rem;
+}
+//Typography css start
+.typography {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin: 20px 0;
+    margin-top: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  small {
+    padding-left: $small-tag-padding;
+    color: $small-tag-color;
+  }
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 14px;
+  font-weight: 700;
+}
+p {
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+pre {
+  background-color: $pre-tag-bg-color;
+  padding: $pre-tag-padding;
+}
+.typography{
+  h5, .h5{
+    font-size: 20px;
+  }
+  h6, .h6{
+    font-size: 16px;
+  }
+}
+//Typography css end
+// tap top 
+.tap-top {
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5;
+  color: #fff;
+  background: $primary-color;
+  border: none;
+  padding: 7px;
+  box-shadow: 0 0 10px $primary-color;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  &:hover {
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+  svg {
+    width: 20px;
+  }
+}
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      span {
+        background: lighten($primary-color, 20%);
+      }
+      &.active,
+      &:hover {
+        span {
+          background: var(--theme-default);
+        }
+      }
+    }
+  }
+  .owl-nav {
+    &.disabled {
+      & + .owl-dots {
+        margin-bottom: -10px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+// modal page
+.modal {
+  .modal-body {
+    .card {
+      box-shadow: none !important;
+    }
+  }
+}
+.modal-dialog {
+  .modal-content {
+    .modal-body {
+      p {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+// index page notify
+.alert-theme {
+  button {
+    top: 25px !important;
+    right: 20px !important;
+    color: var(--theme-default);
+  }
+  span {
+    + span {
+      + span {
+        background-color: $white;
+        color: var(--theme-default);
+        border-radius: 4px;
+        box-shadow: 0 2px 14px -3px rgba($black, 0.2);
+      }
+    }
+  }
+  i {
+    padding: 20px;
+    padding-right: 0 !important;
+    margin-right: 20px !important;
+  }
+  .progress {
+    margin-top: -2px !important;
+    height: 2px;
+    width: 100%;
+    .progress-bar {
+      background-color: var(--theme-default);
+    }
+  }
+}
+.alert-copy {
+  border: 1px solid var(--theme-default);
+  line-height: 1;
+  display: inline-block;
+  width: 300px;
+  color: $white;
+  background-color: var(--theme-default);
+  .close {
+    box-shadow: none;
+    color: $white;
+    line-height: 1.4;
+    font-weight: 100;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.ace-editor {
+  height: 400px !important;
+  width: 100% !important;
+}
+.editor-toolbar {
+  width: 100% !important;
+  &.fullscreen {
+    z-index: 100;
+  }
+}
+.CodeMirror {
+  top: 0 !important;
+}
+.CodeMirror-fullscreen {
+  top: 50px !important;
+}
+.clipboaard-container {
+  h6 {
+    line-height: 1.6;
+    font-size: $paragraph-font-size;
+  }
+}
+fieldset {
+  .bootstrap-touchspin-postfix,
+  .bootstrap-touchspin-prefix {
+    border-radius: 0;
+    padding: 0.4rem 0.75rem;
+  }
+  .input-group-lg {
+    .touchspin {
+      height: 50px;
+    }
+  }
+}
+.f1{
+  .f1-steps{
+    .f1-step{
+      .f1-step-icon{
+        padding: 12px;
+      }
+    }
+  }
+}
+.form-inline{
+  .form-group {
+    display: flex;
+  }
+}
+.input-group-text {
+  i {
+    line-height: 1.5;
+  }
+}
+.modal-body,.modal-header{
+  padding: 25px;
+}
+.modal-header,
+.modal-footer,
+.modal-content {
+  border-color: $light-gray;
+}
+/**=====================
+    02. Typography css Ends
+==========================**/

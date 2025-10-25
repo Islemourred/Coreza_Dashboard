@@ -1,0 +1,113 @@
+{
+  "name": "tivo",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://react.pixelstrap.com/tivo/",
+  "dependencies": {
+    "@asseinfo/react-kanban": "^2.2.0",
+    "@auth0/auth0-react": "^1.10.1",
+    "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
+    "@fullcalendar/react": "^5.11.2",
+    "@react-google-maps/api": "^2.18.1",
+    "@reactour/tour": "^3.1.6",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@toast-ui/react-calendar": "^2.1.3",
+    "ajv": "^8.17.1",
+    "analog-clock-react": "^1.3.0",
+    "apexcharts": "^3.35.3",
+    "axios": "^0.27.2",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "bootstrap": "^5.2.2",
+    "chart.js": "^4.5.1",
+    "chartist": "^1.5.0",
+    "deni-react-treeview": "^1.1.11",
+    "easymde": "^2.20.0",
+    "emoji-picker-react": "^3.5.1",
+    "feather-icons": "^4.29.0",
+    "i18next": "^25.6.0",
+    "i18next-browser-languagedetector": "^6.1.5",
+    "latest-version": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "pigeon-maps": "^0.21.0",
+    "react": "^17.0.2",
+    "react-ace": "^10.1.0",
+    "react-apexcharts": "^1.4.0",
+    "react-bootstrap": "^2.4.0",
+    "react-bootstrap-typeahead": "^6.0.0-rc.3",
+    "react-chartist": "^0.14.4",
+    "react-chartjs-2": "^4.3.1",
+    "react-ckeditor-component": "^1.1.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-countdown": "^2.3.3",
+    "react-countup": "^6.3.0",
+    "react-data-table-component": "^7.5.2",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^17.0.2",
+    "react-dragula": "^1.1.17",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-feather": "^2.0.9",
+    "react-files": "^3.0.0-alpha.3",
+    "react-google-charts": "^4.0.0",
+    "react-hook-form": "^7.33.1",
+    "react-i18next": "^11.18.4",
+    "react-image-crop": "^10.0.8",
+    "react-image-lightbox": "^5.1.4",
+    "react-masonry-css": "^1.0.16",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-range": "^1.8.13",
+    "react-rating": "^2.0.5",
+    "react-ratings-declarative": "^3.4.1",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.6.1",
+    "react-simplemde-editor": "^5.0.2",
+    "react-slick": "^0.29.0",
+    "react-stepzilla": "^7.0.0",
+    "react-to-print": "^2.14.7",
+    "react-toastify": "^9.0.5",
+    "react-vertical-timeline-component": "^3.5.2",
+    "reactstrap": "^9.0.2",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "simplebar-react": "^3.2.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.29",
+    "tui-calendar": "^1.15.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "no-dupe-keys": "off"
+    },
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.10"
+  }
+}

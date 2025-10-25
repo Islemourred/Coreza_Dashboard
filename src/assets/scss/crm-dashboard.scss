@@ -1,0 +1,177 @@
+/* CRM Dashboard Custom Styles */
+
+.activity-timeline .activity-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.activity-timeline .activity-dot i {
+  color: white;
+  font-size: 16px;
+}
+
+.activity-timeline .bg-success {
+  background-color: #51bb25 !important;
+}
+
+.activity-timeline .bg-primary {
+  background-color: #7366ff !important;
+}
+
+.activity-timeline .bg-warning {
+  background-color: #ffa500 !important;
+}
+
+.activity-timeline .bg-danger {
+  background-color: #f73164 !important;
+}
+
+.activity-timeline .bg-info {
+  background-color: #17a2b8 !important;
+}
+
+/* Badge Light Variations */
+.badge-light-primary {
+  background-color: rgba(115, 102, 255, 0.1);
+  color: #7366ff;
+}
+
+.badge-light-success {
+  background-color: rgba(81, 187, 37, 0.1);
+  color: #51bb25;
+}
+
+.badge-light-warning {
+  background-color: rgba(255, 165, 0, 0.1);
+  color: #ffa500;
+}
+
+.badge-light-danger {
+  background-color: rgba(247, 49, 100, 0.1);
+  color: #f73164;
+}
+
+.badge-light-info {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: #17a2b8;
+}
+
+.badge-light-secondary {
+  background-color: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+}
+
+/* Avatar Styles */
+.avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.bg-light-success {
+  background-color: rgba(81, 187, 37, 0.1);
+  color: #51bb25;
+}
+
+.bg-light-primary {
+  background-color: rgba(115, 102, 255, 0.1);
+  color: #7366ff;
+}
+
+.bg-light-warning {
+  background-color: rgba(255, 165, 0, 0.1);
+  color: #ffa500;
+}
+
+.bg-light-info {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: #17a2b8;
+}
+
+/* KPI Cards */
+.static-top-widget .media-body h4 {
+  font-weight: 600;
+}
+
+.static-top-widget .media-body span {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table Styles */
+.table-hover tbody tr:hover {
+  background-color: rgba(115, 102, 255, 0.05);
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+
+/* Card Enhancements */
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-header .text-muted {
+  font-size: 13px;
+}
+
+/* Progress Bar Styles */
+.progress {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+/* Border Utilities */
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .activity-timeline .activity-dot {
+    width: 32px;
+    height: 32px;
+  }
+
+  .activity-timeline .activity-dot i {
+    font-size: 14px;
+  }
+}
