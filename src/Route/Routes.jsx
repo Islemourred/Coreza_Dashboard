@@ -12,6 +12,10 @@ import MarketingDashboard from "../Components/Dashboard/CRM/MarketingDashboard";
 // CRM Pages - Admin
 import UserManagement from "../Components/CRM/Admin/UserManagement";
 import RolesPermissions from "../Components/CRM/Admin/RolesPermissions";
+import RolesCRUD from "../Components/CRM/Admin/RolesCRUD";
+import PermissionsCRUD from "../Components/CRM/Admin/PermissionsCRUD";
+import SystemHistory from "../Components/CRM/Admin/SystemHistory";
+import APIStatus from "../Components/CRM/Admin/APIStatus";
 import SecurityLogs from "../Components/CRM/Admin/SecurityLogs";
 import ERPIntegration from "../Components/CRM/Admin/ERPIntegration";
 import SystemReports from "../Components/CRM/Admin/SystemReports";
@@ -201,8 +205,20 @@ export const routes = [
     Component: <UserManagement />,
   },
   {
+    path: `${process.env.PUBLIC_URL}/admin/roles`,
+    Component: <RolesCRUD />,
+  },
+  {
     path: `${process.env.PUBLIC_URL}/admin/permissions`,
-    Component: <RolesPermissions />,
+    Component: <PermissionsCRUD />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/admin/history`,
+    Component: <SystemHistory />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/admin/api-status`,
+    Component: <APIStatus />,
   },
   {
     path: `${process.env.PUBLIC_URL}/admin/security-logs`,

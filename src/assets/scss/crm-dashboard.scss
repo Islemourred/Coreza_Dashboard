@@ -1,4 +1,6 @@
 /* CRM Dashboard Custom Styles */
+/* Primary Color: #2563EB (Blue) */
+/* Secondary Color: #F39C12 (Orange) */
 
 .activity-timeline .activity-dot {
   width: 40px;
@@ -20,11 +22,11 @@
 }
 
 .activity-timeline .bg-primary {
-  background-color: #7366ff !important;
+  background-color: #2563EB !important;
 }
 
 .activity-timeline .bg-warning {
-  background-color: #ffa500 !important;
+  background-color: #F39C12 !important;
 }
 
 .activity-timeline .bg-danger {
@@ -37,8 +39,8 @@
 
 /* Badge Light Variations */
 .badge-light-primary {
-  background-color: rgba(115, 102, 255, 0.1);
-  color: #7366ff;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: #2563EB;
 }
 
 .badge-light-success {
@@ -47,8 +49,8 @@
 }
 
 .badge-light-warning {
-  background-color: rgba(255, 165, 0, 0.1);
-  color: #ffa500;
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #F39C12;
 }
 
 .badge-light-danger {
@@ -91,13 +93,13 @@
 }
 
 .bg-light-primary {
-  background-color: rgba(115, 102, 255, 0.1);
-  color: #7366ff;
+  background-color: rgba(37, 99, 235, 0.1);
+  color: #2563EB;
 }
 
 .bg-light-warning {
-  background-color: rgba(255, 165, 0, 0.1);
-  color: #ffa500;
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #F39C12;
 }
 
 .bg-light-info {
@@ -118,7 +120,7 @@
 
 /* Table Styles */
 .table-hover tbody tr:hover {
-  background-color: rgba(115, 102, 255, 0.05);
+  background-color: rgba(37, 99, 235, 0.05);
 }
 
 .table th {

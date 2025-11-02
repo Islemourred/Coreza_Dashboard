@@ -1,0 +1,173 @@
+// Admin Dashboard Custom Styles
+// Professional and minimalistic design
+// Primary Color: #2563EB (Blue)
+// Secondary Color: #F39C12 (Orange)
+
+// Logo sizing
+.sidebar-wrapper .sidebar-main .logo-wrapper {
+  a {
+    max-width: 140px;
+    display: block;
+
+    img {
+      max-height: 40px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+// Compact sidebar logo
+.compact-wrapper .sidebar-wrapper .logo-wrapper {
+  a {
+    max-width: 120px;
+
+    img {
+      max-height: 35px;
+    }
+  }
+}
+
+// Light background colors for icons
+.bg-primary-light {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+
+.bg-success-light {
+  background-color: rgba(40, 199, 111, 0.1) !important;
+}
+
+.bg-info-light {
+  background-color: rgba(78, 172, 249, 0.1) !important;
+}
+
+.bg-warning-light {
+  background-color: rgba(243, 156, 18, 0.1) !important;
+}
+
+.bg-danger-light {
+  background-color: rgba(241, 56, 89, 0.1) !important;
+}
+
+// Card shadows and borders
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+// Badge styles
+.badge-sm {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 500;
+}
+
+// Font sizes
+.f-11 {
+  font-size: 11px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+// Table improvements
+.table-hover tbody tr:hover {
+  background-color: rgba(var(--theme-default), 0.03);
+  transition: all 0.2s ease;
+}
+
+// Card header improvements
+.card-header.bg-white {
+  background-color: #fff !important;
+}
+
+// Progress bar improvements
+.progress {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+// Button improvements for outlined buttons
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover,
+.btn-outline-info:hover,
+.btn-outline-warning:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+// Smooth transitions
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+// Modal improvements
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+  padding: 1.25rem 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+// Timeline styles for system events
+.timeline-wrapper {
+  .border-bottom:last-child {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none;
+  }
+
+  .btn-outline-primary:hover,
+  .btn-outline-success:hover,
+  .btn-outline-danger:hover,
+  .btn-outline-info:hover,
+  .btn-outline-warning:hover {
+    transform: none;
+  }
+}
+
+// Custom scrollbar for tables
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

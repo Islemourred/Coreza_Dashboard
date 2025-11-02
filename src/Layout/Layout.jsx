@@ -2,7 +2,6 @@ import  { Fragment, useContext, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Footer from "./Footer/index";
 import TapTop from "./TapTop/index";
 import Header from "./Header";
 import SideBar from "./Sidebar/Sidebar";
@@ -76,7 +75,6 @@ const sideBarReload = ()=>{
               </CSSTransition>
             </TransitionGroup>
           </div>
-          <Footer />
         </div>
       </div>
       <Themecustomizer />

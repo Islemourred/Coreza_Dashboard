@@ -4,7 +4,6 @@ import {
   TrendingUp,
   Package,
   Shield,
-  Settings,
   BarChart2,
   Database,
   Lock,
@@ -16,7 +15,6 @@ import {
   Calendar,
   MapPin,
   Phone,
-  Mail,
   PieChart,
   Award,
   HelpCircle,
@@ -28,88 +26,46 @@ import {
   Layers,
 } from "react-feather";
 
-// Admin Menu - System Management
+// Admin Menu - Clean and Professional
 export const ADMIN_MENU = [
   {
     className: "menu-box",
     menu: [
       {
-        title: "Dashboard",
+        title: "Home",
         icon: <Home />,
         url: `${process.env.PUBLIC_URL}/dashboard/crm-admin`,
         type: "link",
       },
       {
-        title: "System Management",
-        icon: <Settings />,
-        type: "sub",
-        menu: [
-          {
-            title: "User Management",
-            url: `${process.env.PUBLIC_URL}/admin/users`,
-            type: "link",
-            icon: <Users />,
-          },
-          {
-            title: "Roles & Permissions",
-            url: `${process.env.PUBLIC_URL}/admin/permissions`,
-            type: "link",
-            icon: <Lock />,
-          },
-          {
-            title: "Security Logs",
-            url: `${process.env.PUBLIC_URL}/admin/security-logs`,
-            type: "link",
-            icon: <Shield />,
-          },
-        ],
+        title: "Users",
+        icon: <Users />,
+        url: `${process.env.PUBLIC_URL}/admin/users`,
+        type: "link",
       },
       {
-        title: "Integrations",
-        icon: <Layers />,
-        type: "sub",
-        menu: [
-          {
-            title: "ERP Integration",
-            url: `${process.env.PUBLIC_URL}/admin/erp-integration`,
-            type: "link",
-            icon: <Database />,
-          },
-          {
-            title: "Email & Calendar",
-            url: `${process.env.PUBLIC_URL}/admin/email-integration`,
-            type: "link",
-            icon: <Mail />,
-          },
-          {
-            title: "API Management",
-            url: `${process.env.PUBLIC_URL}/admin/api-management`,
-            type: "link",
-            icon: <Activity />,
-          },
-        ],
+        title: "Roles",
+        icon: <Shield />,
+        url: `${process.env.PUBLIC_URL}/admin/roles`,
+        type: "link",
       },
       {
-        title: "Reports & Analytics",
-        icon: <BarChart2 />,
-        type: "sub",
-        menu: [
-          {
-            title: "System Reports",
-            url: `${process.env.PUBLIC_URL}/admin/system-reports`,
-            type: "link",
-          },
-          {
-            title: "User Activity",
-            url: `${process.env.PUBLIC_URL}/admin/user-activity`,
-            type: "link",
-          },
-          {
-            title: "Performance Metrics",
-            url: `${process.env.PUBLIC_URL}/admin/performance`,
-            type: "link",
-          },
-        ],
+        title: "Permissions",
+        icon: <Lock />,
+        url: `${process.env.PUBLIC_URL}/admin/permissions`,
+        type: "link",
+      },
+      {
+        title: "History",
+        icon: <Activity />,
+        url: `${process.env.PUBLIC_URL}/admin/history`,
+        type: "link",
+      },
+      {
+        title: "API Status",
+        icon: <Database />,
+        url: `${process.env.PUBLIC_URL}/admin/api-status`,
+        type: "link",
       },
     ],
   },
