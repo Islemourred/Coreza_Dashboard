@@ -36,6 +36,7 @@
 ## Page Structures
 
 ### 1. HOME PAGE (Dashboard)
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  Welcome back, Administrator!                               │
@@ -62,6 +63,7 @@
 ```
 
 ### 2. USERS PAGE
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  👥 System Users                          [➕ Add New User]  │
@@ -84,6 +86,7 @@
 ```
 
 ### 3. ROLES PAGE
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  🛡️ System Roles                         [➕ Add New Role]   │
@@ -102,6 +105,7 @@
 ```
 
 ### 4. PERMISSIONS PAGE
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  🔐 System Permissions               [➕ Add New Permission] │
@@ -127,6 +131,7 @@
 ```
 
 ### 5. HISTORY PAGE
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  📝 Login & Logout History                    🔍 Search 🔽  │
@@ -150,6 +155,7 @@
 ```
 
 ### 6. API STATUS PAGE
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  🔌 API Integration Status                                  │
@@ -180,6 +186,7 @@
 ## Color Legend
 
 ### Status Colors:
+
 - 🟢 **Green**: Online, Active, Success, Positive
 - 🔵 **Blue**: Primary, Information
 - 🟡 **Yellow**: Warning, Degraded, Pending
@@ -187,6 +194,7 @@
 - ⚪ **Gray**: Inactive, Disabled, Neutral
 
 ### Badge Colors:
+
 - **Primary (Blue)**: Main roles, primary info
 - **Success (Green)**: Active status, online systems
 - **Warning (Yellow)**: Warnings, degraded performance
@@ -195,6 +203,7 @@
 - **Secondary (Gray)**: Inactive, neutral status
 
 ### Icon Categories:
+
 - 👤 User-related
 - 🛡️ Security and roles
 - 🔐 Permissions and access
@@ -208,6 +217,7 @@
 ## Interactive Elements
 
 ### Buttons:
+
 - ➕ Add New (Primary button)
 - ✏️ Edit (Outline button)
 - 🗑️ Delete (Outline danger button)
@@ -215,6 +225,7 @@
 - 🔽 Filter (Dropdown)
 
 ### Modals:
+
 ```
 ┌────────────────────────────────────┐
 │  Add New User               [X]    │
@@ -231,21 +242,25 @@
 ## Responsive Behavior
 
 ### Desktop (1920px+):
+
 - Full sidebar visible
 - Cards in 4-column layout
 - Large tables with all columns
 
 ### Laptop (1366px):
+
 - Full sidebar visible
 - Cards in 3-column layout
 - Tables with scrollable overflow
 
 ### Tablet (768px):
+
 - Collapsible sidebar
 - Cards in 2-column layout
 - Horizontal scroll for tables
 
 ### Mobile (< 768px):
+
 - Hidden sidebar (hamburger menu)
 - Cards in single column
 - Touch-optimized controls

@@ -105,7 +105,11 @@ const RolesCRUD = () => {
 
   return (
     <>
-      <Breadcrumbs mainTitle="Roles Management" parent="Admin" title="Roles CRUD" />
+      <Breadcrumbs
+        mainTitle="Roles Management"
+        parent="Admin"
+        title="Roles CRUD"
+      />
       <Container fluid={true}>
         <Row>
           <Col sm="12">
@@ -157,14 +161,18 @@ const RolesCRUD = () => {
                                 />
                               </div>
                               <div>
-                                <div className="fw-semibold f-14">{role.name}</div>
+                                <div className="fw-semibold f-14">
+                                  {role.name}
+                                </div>
                                 <div className="text-muted f-11">
                                   Created: {role.createdAt}
                                 </div>
                               </div>
                             </div>
                           </td>
-                          <td className="text-muted f-13">{role.description}</td>
+                          <td className="text-muted f-13">
+                            {role.description}
+                          </td>
                           <td className="text-center">
                             <Badge color="light" className="badge-sm">
                               <Users size={12} className="me-1" />
@@ -172,7 +180,9 @@ const RolesCRUD = () => {
                             </Badge>
                           </td>
                           <td className="text-center">
-                            <span className="fw-semibold">{role.permissions}</span>
+                            <span className="fw-semibold">
+                              {role.permissions}
+                            </span>
                           </td>
                           <td className="text-center">
                             <Badge color="success" className="badge-sm">

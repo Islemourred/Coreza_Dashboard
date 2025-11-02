@@ -10,7 +10,13 @@ import {
   Progress,
 } from "reactstrap";
 import { Breadcrumbs } from "../../../AbstractElements";
-import { Activity, CheckCircle, XCircle, AlertCircle, Wifi } from "react-feather";
+import {
+  Activity,
+  CheckCircle,
+  XCircle,
+  AlertCircle,
+  Wifi,
+} from "react-feather";
 
 const APIStatus = () => {
   const [apis] = useState([
@@ -138,15 +144,23 @@ const APIStatus = () => {
   const onlineCount = apis.filter((api) => api.status === "Online").length;
   const offlineCount = apis.filter((api) => api.status === "Offline").length;
   const degradedCount = apis.filter((api) => api.status === "Degraded").length;
-  const avgUptime = (apis.reduce((acc, api) => acc + api.uptime, 0) / apis.length).toFixed(2);
+  const avgUptime = (
+    apis.reduce((acc, api) => acc + api.uptime, 0) / apis.length
+  ).toFixed(2);
   const avgResponseTime = Math.round(
-    apis.filter((api) => api.responseTime > 0).reduce((acc, api) => acc + api.responseTime, 0) /
+    apis
+      .filter((api) => api.responseTime > 0)
+      .reduce((acc, api) => acc + api.responseTime, 0) /
       apis.filter((api) => api.responseTime > 0).length
   );
 
   return (
     <>
-      <Breadcrumbs mainTitle="API Status" parent="Admin" title="API Integrations" />
+      <Breadcrumbs
+        mainTitle="API Status"
+        parent="Admin"
+        title="API Integrations"
+      />
       <Container fluid={true}>
         {/* Summary Cards */}
         <Row className="mb-4">
@@ -256,18 +270,26 @@ const APIStatus = () => {
                                 {getStatusIcon(api.status)}
                                 <h6 className="mb-0">{api.name}</h6>
                               </div>
-                              <p className="text-muted f-12 mb-0">{api.endpoint}</p>
+                              <p className="text-muted f-12 mb-0">
+                                {api.endpoint}
+                              </p>
                             </div>
                             <div className="text-end">
                               {getStatusBadge(api.status)}
-                              <div className="text-muted f-11 mt-1">{api.type}</div>
+                              <div className="text-muted f-11 mt-1">
+                                {api.type}
+                              </div>
                             </div>
                           </div>
 
                           <div className="mb-2">
                             <div className="d-flex justify-content-between mb-1">
                               <span className="f-12 text-muted">Uptime</span>
-                              <span className={`f-12 fw-semibold text-${getUptimeColor(api.uptime)}`}>
+                              <span
+                                className={`f-12 fw-semibold text-${getUptimeColor(
+                                  api.uptime
+                                )}`}
+                              >
                                 {api.uptime}%
                               </span>
                             </div>
@@ -280,13 +302,17 @@ const APIStatus = () => {
 
                           <div className="d-flex justify-content-between align-items-center">
                             <div>
-                              <span className="f-11 text-muted">Response Time:</span>
+                              <span className="f-11 text-muted">
+                                Response Time:
+                              </span>
                               <span
                                 className={`f-12 fw-semibold ms-1 text-${getResponseTimeColor(
                                   api.responseTime
                                 )}`}
                               >
-                                {api.responseTime > 0 ? `${api.responseTime}ms` : "N/A"}
+                                {api.responseTime > 0
+                                  ? `${api.responseTime}ms`
+                                  : "N/A"}
                               </span>
                             </div>
                             <div className="text-muted f-11">
@@ -314,7 +340,9 @@ const APIStatus = () => {
                 <Row>
                   <Col md="4" className="text-center border-end">
                     <h2 className="text-primary mb-1">{avgResponseTime}ms</h2>
-                    <p className="text-muted f-12 mb-0">Average Response Time</p>
+                    <p className="text-muted f-12 mb-0">
+                      Average Response Time
+                    </p>
                   </Col>
                   <Col md="4" className="text-center border-end">
                     <h2 className="text-success mb-1">{avgUptime}%</h2>

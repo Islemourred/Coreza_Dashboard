@@ -99,7 +99,11 @@ const SystemHistory = () => {
 
   return (
     <>
-      <Breadcrumbs mainTitle="System History" parent="Admin" title="Login/Logout History" />
+      <Breadcrumbs
+        mainTitle="System History"
+        parent="Admin"
+        title="Login/Logout History"
+      />
       <Container fluid={true}>
         <Row>
           <Col sm="12">
@@ -154,8 +158,12 @@ const SystemHistory = () => {
                                 <User size={16} className="text-muted" />
                               </div>
                               <div>
-                                <div className="fw-semibold f-14">{log.user}</div>
-                                <div className="text-muted f-12">{log.email}</div>
+                                <div className="fw-semibold f-14">
+                                  {log.user}
+                                </div>
+                                <div className="text-muted f-12">
+                                  {log.email}
+                                </div>
                               </div>
                             </div>
                           </td>
@@ -168,7 +176,9 @@ const SystemHistory = () => {
                           <td className="text-muted f-13">{log.timestamp}</td>
                           <td className="f-13">{log.ip}</td>
                           <td className="text-muted f-13">{log.device}</td>
-                          <td className="text-center">{getStatusBadge(log.status)}</td>
+                          <td className="text-center">
+                            {getStatusBadge(log.status)}
+                          </td>
                         </tr>
                       ))}
                     </tbody>

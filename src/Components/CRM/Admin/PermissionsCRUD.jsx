@@ -199,11 +199,15 @@ const PermissionsCRUD = () => {
                                 {permission.displayName}
                               </div>
                               <div className="text-muted f-11">
-                                <code className="text-muted">{permission.name}</code>
+                                <code className="text-muted">
+                                  {permission.name}
+                                </code>
                               </div>
                             </div>
                           </td>
-                          <td className="text-muted f-13">{permission.description}</td>
+                          <td className="text-muted f-13">
+                            {permission.description}
+                          </td>
                           <td>
                             <Badge color="light" className="badge-sm">
                               {permission.module}
@@ -345,7 +349,10 @@ const PermissionsCRUD = () => {
                       <div className="border rounded p-3">
                         <h6 className="mb-2">{module}</h6>
                         <p className="text-muted f-12 mb-0">
-                          {permissions.filter((p) => p.module === module).length}{" "}
+                          {
+                            permissions.filter((p) => p.module === module)
+                              .length
+                          }{" "}
                           permissions
                         </p>
                       </div>
@@ -385,7 +392,9 @@ const PermissionsCRUD = () => {
                     type="text"
                     id="displayName"
                     placeholder="e.g., View Users"
-                    defaultValue={editMode ? selectedPermission?.displayName : ""}
+                    defaultValue={
+                      editMode ? selectedPermission?.displayName : ""
+                    }
                   />
                 </FormGroup>
               </Col>

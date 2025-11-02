@@ -4,7 +4,6 @@ import Ecommerce from "../Components/Dashboard/Ecommerce/Ecommerce";
 
 // CRM Dashboards
 import AdminDashboard from "../Components/Dashboard/CRM/AdminDashboard";
-import ManagerDashboard from "../Components/Dashboard/CRM/ManagerDashboard";
 import SalesDashboard from "../Components/Dashboard/CRM/SalesDashboard";
 import SupportDashboard from "../Components/Dashboard/CRM/SupportDashboard";
 import MarketingDashboard from "../Components/Dashboard/CRM/MarketingDashboard";
@@ -23,8 +22,19 @@ import SystemReports from "../Components/CRM/Admin/SystemReports";
 // CRM Pages - Manager
 import PipelineOverview from "../Components/CRM/Manager/PipelineOverview";
 import TeamPerformance from "../Components/CRM/Manager/TeamPerformance";
+import ManagerDashboardNew from "../Components/CRM/Manager/ManagerDashboard";
+import AdvancedPipeline from "../Components/CRM/Manager/AdvancedPipeline";
+import TeamReports from "../Components/CRM/Manager/TeamReports";
+import AIAnalytics from "../Components/CRM/Manager/AIAnalytics";
 
 // CRM Pages - Sales
+import SalesRepDashboard from "../Components/CRM/Sales/SalesDashboard";
+import ClientsCRUD from "../Components/CRM/Sales/ClientsCRUD";
+import CommandesCRUD from "../Components/CRM/Sales/CommandesCRUD";
+import SondagesCRUD from "../Components/CRM/Sales/SondagesCRUD";
+import SalesPipeline from "../Components/CRM/Sales/SalesPipeline";
+import VisitesCRUD from "../Components/CRM/Sales/VisitesCRUD";
+import ChatRealTime from "../Components/CRM/Sales/ChatRealTime";
 import ClientsList from "../Components/CRM/Sales/ClientsList";
 import AddClient from "../Components/CRM/Sales/AddClient";
 import OpportunitiesList from "../Components/CRM/Sales/OpportunitiesList";
@@ -184,7 +194,7 @@ export const routes = [
   },
   {
     path: `${process.env.PUBLIC_URL}/dashboard/crm-manager`,
-    Component: <ManagerDashboard />,
+    Component: <ManagerDashboardNew />,
   },
   {
     path: `${process.env.PUBLIC_URL}/dashboard/crm-sales`,
@@ -250,6 +260,36 @@ export const routes = [
   },
 
   // Sales Manager Pages
+  // Manager Pages - New Complete Structure
+  {
+    path: `${process.env.PUBLIC_URL}/manager/dashboard`,
+    Component: <ManagerDashboardNew />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/advanced-pipeline`,
+    Component: <AdvancedPipeline />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/reports`,
+    Component: <TeamReports />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/ai-analytics`,
+    Component: <AIAnalytics />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/team-performance`,
+    Component: <TeamPerformance />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/dashboards`,
+    Component: <ManagerDashboardNew />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/manager/chat`,
+    Component: <ChatRealTime />,
+  },
+  // Legacy Manager Routes (kept for compatibility)
   {
     path: `${process.env.PUBLIC_URL}/manager/pipeline`,
     Component: <PipelineOverview />,
@@ -259,47 +299,41 @@ export const routes = [
     Component: <OpportunitiesList />,
   },
   {
-    path: `${process.env.PUBLIC_URL}/manager/forecasting`,
-    Component: <PipelineOverview />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/revenue`,
-    Component: <PipelineOverview />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/team-performance`,
-    Component: <TeamPerformance />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/team-activity`,
-    Component: <TeamPerformance />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/targets`,
-    Component: <TeamPerformance />,
-  },
-  {
     path: `${process.env.PUBLIC_URL}/manager/clients`,
     Component: <ClientsList />,
   },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/sales-reports`,
-    Component: <ManagerDashboard />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/team-reports`,
-    Component: <TeamPerformance />,
-  },
-  {
-    path: `${process.env.PUBLIC_URL}/manager/visit-reports`,
-    Component: <ManagerDashboard />,
-  },
 
-  // Sales Representative Pages
+  // Sales Representative Pages - New Clean Structure
+  {
+    path: `${process.env.PUBLIC_URL}/sales/dashboard`,
+    Component: <SalesRepDashboard />,
+  },
   {
     path: `${process.env.PUBLIC_URL}/sales/clients`,
-    Component: <ClientsList />,
+    Component: <ClientsCRUD />,
   },
+  {
+    path: `${process.env.PUBLIC_URL}/sales/commandes`,
+    Component: <CommandesCRUD />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/sales/sondages`,
+    Component: <SondagesCRUD />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/sales/pipeline`,
+    Component: <SalesPipeline />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/sales/visites`,
+    Component: <VisitesCRUD />,
+  },
+  {
+    path: `${process.env.PUBLIC_URL}/sales/chat`,
+    Component: <ChatRealTime />,
+  },
+
+  // Legacy Sales Routes (for compatibility)
   {
     path: `${process.env.PUBLIC_URL}/sales/clients/add`,
     Component: <AddClient />,

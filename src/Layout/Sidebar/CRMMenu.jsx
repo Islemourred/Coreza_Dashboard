@@ -77,228 +77,96 @@ export const MANAGER_MENU = [
     className: "menu-box",
     menu: [
       {
-        title: "Dashboard",
+        title: "Home",
         icon: <Home />,
-        url: `${process.env.PUBLIC_URL}/dashboard/crm-manager`,
+        url: `${process.env.PUBLIC_URL}/manager/dashboard`,
         type: "link",
       },
       {
-        title: "Sales Pipeline",
+        title: "Pipeline Avancé",
         icon: <TrendingUp />,
-        type: "sub",
-        menu: [
-          {
-            title: "Pipeline Overview",
-            url: `${process.env.PUBLIC_URL}/manager/pipeline`,
-            type: "link",
-            icon: <Target />,
-          },
-          {
-            title: "Opportunities",
-            url: `${process.env.PUBLIC_URL}/manager/opportunities`,
-            type: "link",
-            icon: <Briefcase />,
-          },
-          {
-            title: "Forecasting",
-            url: `${process.env.PUBLIC_URL}/manager/forecasting`,
-            type: "link",
-            icon: <PieChart />,
-          },
-          {
-            title: "Revenue Analysis",
-            url: `${process.env.PUBLIC_URL}/manager/revenue`,
-            type: "link",
-            icon: <DollarSign />,
-          },
-        ],
-      },
-      {
-        title: "Team Management",
-        icon: <Users />,
-        type: "sub",
-        menu: [
-          {
-            title: "Team Performance",
-            url: `${process.env.PUBLIC_URL}/manager/team-performance`,
-            type: "link",
-            icon: <Award />,
-          },
-          {
-            title: "Activity Tracking",
-            url: `${process.env.PUBLIC_URL}/manager/team-activity`,
-            type: "link",
-            icon: <Activity />,
-          },
-          {
-            title: "Targets & Goals",
-            url: `${process.env.PUBLIC_URL}/manager/targets`,
-            type: "link",
-            icon: <Target />,
-          },
-        ],
-      },
-      {
-        title: "Clients & Contacts",
-        icon: <Users />,
-        url: `${process.env.PUBLIC_URL}/manager/clients`,
+        url: `${process.env.PUBLIC_URL}/manager/advanced-pipeline`,
         type: "link",
       },
       {
-        title: "Reports",
+        title: "Rapports IA",
         icon: <FileText />,
-        type: "sub",
-        menu: [
-          {
-            title: "Sales Reports",
-            url: `${process.env.PUBLIC_URL}/manager/sales-reports`,
-            type: "link",
-          },
-          {
-            title: "Team Reports",
-            url: `${process.env.PUBLIC_URL}/manager/team-reports`,
-            type: "link",
-          },
-          {
-            title: "Visit Reports",
-            url: `${process.env.PUBLIC_URL}/manager/visit-reports`,
-            type: "link",
-          },
-        ],
+        url: `${process.env.PUBLIC_URL}/manager/reports`,
+        type: "link",
+      },
+      {
+        title: "Analytics IA",
+        icon: <BarChart2 />,
+        url: `${process.env.PUBLIC_URL}/manager/ai-analytics`,
+        type: "link",
+      },
+      {
+        title: "Équipe",
+        icon: <Users />,
+        url: `${process.env.PUBLIC_URL}/manager/team-performance`,
+        type: "link",
+      },
+      {
+        title: "Tableaux de Bord",
+        icon: <PieChart />,
+        url: `${process.env.PUBLIC_URL}/manager/dashboards`,
+        type: "link",
+      },
+      {
+        title: "Chat Équipe",
+        icon: <MessageSquare />,
+        url: `${process.env.PUBLIC_URL}/manager/chat`,
+        type: "link",
       },
     ],
   },
 ];
 
-// Sales Representative Menu - Field Operations
+// Sales Representative Menu - Clean & Direct Access
 export const SALES_MENU = [
   {
     className: "menu-box",
     menu: [
       {
-        title: "Dashboard",
+        title: "Home",
         icon: <Home />,
-        url: `${process.env.PUBLIC_URL}/dashboard/crm-sales`,
+        url: `${process.env.PUBLIC_URL}/sales/dashboard`,
         type: "link",
       },
       {
-        title: "Clients & Contacts",
+        title: "Clients",
         icon: <Users />,
-        type: "sub",
-        menu: [
-          {
-            title: "My Clients",
-            url: `${process.env.PUBLIC_URL}/sales/clients`,
-            type: "link",
-          },
-          {
-            title: "Add New Client",
-            url: `${process.env.PUBLIC_URL}/sales/clients/add`,
-            type: "link",
-          },
-          {
-            title: "Contact Management",
-            url: `${process.env.PUBLIC_URL}/sales/contacts`,
-            type: "link",
-          },
-        ],
-      },
-      {
-        title: "Opportunities",
-        icon: <Briefcase />,
-        type: "sub",
-        menu: [
-          {
-            title: "My Opportunities",
-            url: `${process.env.PUBLIC_URL}/sales/opportunities`,
-            type: "link",
-          },
-          {
-            title: "Create Opportunity",
-            url: `${process.env.PUBLIC_URL}/sales/opportunities/create`,
-            type: "link",
-          },
-        ],
-      },
-      {
-        title: "Interactions",
-        icon: <MessageSquare />,
-        type: "sub",
-        menu: [
-          {
-            title: "Calls & Meetings",
-            url: `${process.env.PUBLIC_URL}/sales/interactions`,
-            type: "link",
-            icon: <Phone />,
-          },
-          {
-            title: "Schedule Visit",
-            url: `${process.env.PUBLIC_URL}/sales/schedule-visit`,
-            type: "link",
-            icon: <Calendar />,
-          },
-          {
-            title: "Visit History",
-            url: `${process.env.PUBLIC_URL}/sales/visit-history`,
-            type: "link",
-            icon: <MapPin />,
-          },
-        ],
-      },
-      {
-        title: "Visit Reports",
-        icon: <FileText />,
-        type: "sub",
-        menu: [
-          {
-            title: "Create Report",
-            url: `${process.env.PUBLIC_URL}/sales/reports/create`,
-            type: "link",
-          },
-          {
-            title: "My Reports",
-            url: `${process.env.PUBLIC_URL}/sales/reports`,
-            type: "link",
-          },
-          {
-            title: "Report Analysis",
-            url: `${process.env.PUBLIC_URL}/sales/reports/analysis`,
-            type: "link",
-          },
-        ],
-      },
-      {
-        title: "Orders",
-        icon: <Package />,
-        type: "sub",
-        menu: [
-          {
-            title: "Create Order",
-            url: `${process.env.PUBLIC_URL}/sales/orders/create`,
-            type: "link",
-          },
-          {
-            title: "My Orders",
-            url: `${process.env.PUBLIC_URL}/sales/orders`,
-            type: "link",
-          },
-          {
-            title: "Order History",
-            url: `${process.env.PUBLIC_URL}/sales/orders/history`,
-            type: "link",
-          },
-        ],
-      },
-      {
-        title: "Territory Map",
-        icon: <MapPin />,
-        url: `${process.env.PUBLIC_URL}/sales/territory-map`,
+        url: `${process.env.PUBLIC_URL}/sales/clients`,
         type: "link",
       },
       {
-        title: "My Tasks",
-        icon: <CheckCircle />,
-        url: `${process.env.PUBLIC_URL}/sales/tasks`,
+        title: "Commandes",
+        icon: <Package />,
+        url: `${process.env.PUBLIC_URL}/sales/commandes`,
+        type: "link",
+      },
+      {
+        title: "Sondages",
+        icon: <PieChart />,
+        url: `${process.env.PUBLIC_URL}/sales/sondages`,
+        type: "link",
+      },
+      {
+        title: "Pipeline de Ventes",
+        icon: <TrendingUp />,
+        url: `${process.env.PUBLIC_URL}/sales/pipeline`,
+        type: "link",
+      },
+      {
+        title: "Visites",
+        icon: <MapPin />,
+        url: `${process.env.PUBLIC_URL}/sales/visites`,
+        type: "link",
+      },
+      {
+        title: "Chat",
+        icon: <MessageSquare />,
+        url: `${process.env.PUBLIC_URL}/sales/chat`,
         type: "link",
       },
     ],

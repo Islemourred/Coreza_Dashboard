@@ -385,9 +385,7 @@ const UserManagement = () => {
                         name="status"
                         id="active"
                         defaultChecked={
-                          editMode
-                            ? selectedUser?.status === "Active"
-                            : true
+                          editMode ? selectedUser?.status === "Active" : true
                         }
                       />
                       <Label className="form-check-label" for="active">
@@ -401,9 +399,7 @@ const UserManagement = () => {
                         name="status"
                         id="inactive"
                         defaultChecked={
-                          editMode
-                            ? selectedUser?.status === "Inactive"
-                            : false
+                          editMode ? selectedUser?.status === "Inactive" : false
                         }
                       />
                       <Label className="form-check-label" for="inactive">

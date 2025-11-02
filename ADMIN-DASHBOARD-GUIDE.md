@@ -3,6 +3,7 @@
 ## How to Access
 
 1. **Login** as an administrator user:
+
    - Email: `admin@admin.com`
    - Default role: Administrator
 
@@ -13,9 +14,11 @@
 ## Page Overview
 
 ### 🏠 Home
+
 **URL:** `/dashboard/crm-admin`
 
 **What you'll see:**
+
 - 4 KPI Cards showing:
   - Total Users: 1,247 (↑ +12.5%)
   - Active Roles: 8
@@ -32,9 +35,11 @@
 ---
 
 ### 👥 Users
+
 **URL:** `/admin/users`
 
 **What you'll see:**
+
 - List of all users in a clean table
 - Each user shows:
   - Avatar icon
@@ -51,6 +56,7 @@
 - "Add New User" button at the top
 
 **Actions you can do:**
+
 - ➕ Add new users
 - ✏️ Edit existing users
 - 🗑️ Delete users (except admins)
@@ -60,9 +66,11 @@
 ---
 
 ### 🛡️ Roles
+
 **URL:** `/admin/roles`
 
 **What you'll see:**
+
 - List of all system roles
 - Each role shows:
   - Shield icon (color-coded)
@@ -79,6 +87,7 @@
   - Active Roles: 5
 
 **Actions you can do:**
+
 - ➕ Create new roles
 - ✏️ Edit role details
 - 🗑️ Delete roles (except admin)
@@ -86,6 +95,7 @@
 - 📊 Track role usage
 
 **Default Roles:**
+
 1. Administrator (3 users, 156 permissions)
 2. Sales Manager (8 users, 45 permissions)
 3. Sales Representative (52 users, 28 permissions)
@@ -95,9 +105,11 @@
 ---
 
 ### 🔐 Permissions
+
 **URL:** `/admin/permissions`
 
 **What you'll see:**
+
 - Comprehensive list of all permissions
 - Each permission shows:
   - Display name (e.g., "View Users")
@@ -115,6 +127,7 @@
 - Permissions by Module section
 
 **Actions you can do:**
+
 - ➕ Create new permissions
 - ✏️ Edit permission details
 - 🗑️ Delete permissions
@@ -122,12 +135,14 @@
 - 🔍 Track role assignments
 
 **Permission Types:**
+
 - 🔵 Read (Info badge)
 - 🟢 Write (Primary badge)
 - 🔴 Delete (Danger badge)
 - 🟡 Admin (Warning badge)
 
 **Modules:**
+
 - User Management
 - Security
 - CRM
@@ -137,9 +152,11 @@
 ---
 
 ### 📝 History
+
 **URL:** `/admin/history`
 
 **What you'll see:**
+
 - Complete login/logout activity log
 - Each entry shows:
   - User avatar and name
@@ -157,6 +174,7 @@
 - Filter and search functionality
 
 **What you can monitor:**
+
 - ✅ Successful logins
 - ❌ Failed login attempts
 - 🔄 Logout activities
@@ -165,6 +183,7 @@
 - ⏰ Session durations
 
 **Example entries:**
+
 - Admin User logged in from Windows at 09:15:23
 - Failed login attempt from unknown user at 14:22:18
 - Support Agent logged out at 17:45:12
@@ -172,9 +191,11 @@
 ---
 
 ### 🔌 API Status
+
 **URL:** `/admin/api-status`
 
 **What you'll see:**
+
 - Real-time monitoring dashboard
 - Summary cards showing:
   - Online APIs: 7 (green)
@@ -192,6 +213,7 @@
 - Performance summary at the bottom
 
 **APIs Monitored:**
+
 1. ✅ **ERP System (SAP)** - 99.8% uptime, 145ms
 2. ✅ **Email Service (Outlook)** - 99.9% uptime, 98ms
 3. ✅ **WhatsApp Business API** - 98.5% uptime, 234ms
@@ -202,6 +224,7 @@
 8. ✅ **Customer Portal API** - 99.4% uptime, 89ms
 
 **Color Codes:**
+
 - 🟢 Green (✅): Online, working perfectly
 - 🟡 Yellow (⚠️): Degraded, experiencing issues
 - 🔴 Red (❌): Offline, not responding
@@ -211,6 +234,7 @@
 ## Design Features
 
 ### Visual Elements:
+
 - 🎨 Clean card-based layout
 - 🎯 Icon-driven navigation
 - 📊 Progress bars for metrics
@@ -219,6 +243,7 @@
 - 📱 Fully responsive design
 
 ### Color Scheme:
+
 - **Primary (Blue):** Main actions, primary info
 - **Success (Green):** Active, online, positive status
 - **Warning (Yellow):** Warnings, degraded status
@@ -227,6 +252,7 @@
 - **Light backgrounds:** Soft, professional appearance
 
 ### Interactive Elements:
+
 - Hover effects on cards (lift slightly)
 - Button hover effects (color transition)
 - Table row highlights on hover
@@ -238,12 +264,14 @@
 ## Navigation Tips
 
 ### Sidebar:
+
 - Clean, flat structure (no sub-menus)
 - Icons for quick recognition
 - Active page highlighted
 - Responsive collapse on mobile
 
 ### Quick Actions:
+
 - **Home:** View overall system health
 - **Users:** Manage user accounts daily
 - **Roles:** Define access levels
@@ -256,16 +284,19 @@
 ## Best Practices
 
 ### Daily Tasks:
+
 1. Check **Home** dashboard for system overview
 2. Review **History** for unusual activity
 3. Monitor **API Status** for integration health
 
 ### Weekly Tasks:
+
 1. Review **Users** for inactive accounts
 2. Check **Roles** assignments
 3. Verify **Permissions** are up to date
 
 ### Monthly Tasks:
+
 1. User audit and cleanup
 2. Role optimization
 3. Permission review
@@ -276,6 +307,7 @@
 ## Mobile Access
 
 All pages are fully optimized for mobile devices:
+
 - Responsive tables (horizontal scroll)
 - Touch-friendly buttons
 - Optimized card layouts
@@ -288,14 +320,17 @@ All pages are fully optimized for mobile devices:
 ### Common Issues:
 
 **Can't delete a user?**
+
 - Admin users cannot be deleted for security
 
 **API showing offline?**
+
 - Check the Last Check timestamp
 - Verify the endpoint URL
 - Contact the integration provider
 
 **Permission not working?**
+
 - Ensure it's assigned to the correct role
 - Check the permission type (Read/Write/Delete)
 - Verify the module assignment
@@ -305,6 +340,7 @@ All pages are fully optimized for mobile devices:
 ## Future Enhancements
 
 Coming soon:
+
 - Real-time notifications
 - Advanced analytics charts
 - Bulk operations

@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card, CardBody, Progress, Badge } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardBody,
+  Progress,
+  Badge,
+} from "reactstrap";
 import { Breadcrumbs } from "../../../../AbstractElements";
 import { useCRM } from "../../../../Helper/CRM/CRMProvider";
 import {
@@ -21,8 +29,12 @@ const AdminDashboard = () => {
       <Breadcrumbs mainTitle="Home" parent="Admin" title="Dashboard Overview" />
       <Container fluid={true}>
         <div className="mb-4">
-          <h4 className="mb-1">Welcome back, {user?.name || "Administrator"}!</h4>
-          <p className="text-muted f-14">Complete system overview and management</p>
+          <h4 className="mb-1">
+            Welcome back, {user?.name || "Administrator"}!
+          </h4>
+          <p className="text-muted f-14">
+            Complete system overview and management
+          </p>
         </div>
 
         {/* Main KPI Cards */}
@@ -32,7 +44,9 @@ const AdminDashboard = () => {
               <CardBody>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <p className="text-muted mb-1 f-12 text-uppercase">Total Users</p>
+                    <p className="text-muted mb-1 f-12 text-uppercase">
+                      Total Users
+                    </p>
                     <h3 className="mb-0">1,247</h3>
                     <small className="text-success">
                       <TrendingUp size={12} /> +12.5% this month
@@ -54,7 +68,9 @@ const AdminDashboard = () => {
               <CardBody>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <p className="text-muted mb-1 f-12 text-uppercase">Active Roles</p>
+                    <p className="text-muted mb-1 f-12 text-uppercase">
+                      Active Roles
+                    </p>
                     <h3 className="mb-0">8</h3>
                     <small className="text-info">5 custom roles</small>
                   </div>
@@ -74,7 +90,9 @@ const AdminDashboard = () => {
               <CardBody>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <p className="text-muted mb-1 f-12 text-uppercase">API Status</p>
+                    <p className="text-muted mb-1 f-12 text-uppercase">
+                      API Status
+                    </p>
                     <h3 className="mb-0">7/8</h3>
                     <small className="text-success">
                       <CheckCircle size={12} /> All systems operational
@@ -96,7 +114,9 @@ const AdminDashboard = () => {
               <CardBody>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <p className="text-muted mb-1 f-12 text-uppercase">Active Sessions</p>
+                    <p className="text-muted mb-1 f-12 text-uppercase">
+                      Active Sessions
+                    </p>
                     <h3 className="mb-0">342</h3>
                     <small className="text-muted">Last hour: 48 logins</small>
                   </div>
@@ -124,28 +144,44 @@ const AdminDashboard = () => {
                       <span className="f-14">User Logins (24h)</span>
                       <span className="fw-semibold">847</span>
                     </div>
-                    <Progress value={85} color="primary" style={{ height: "8px" }} />
+                    <Progress
+                      value={85}
+                      color="primary"
+                      style={{ height: "8px" }}
+                    />
                   </Col>
                   <Col md="6" className="mb-4">
                     <div className="d-flex justify-content-between mb-2">
                       <span className="f-14">API Requests (24h)</span>
                       <span className="fw-semibold">12.4K</span>
                     </div>
-                    <Progress value={92} color="success" style={{ height: "8px" }} />
+                    <Progress
+                      value={92}
+                      color="success"
+                      style={{ height: "8px" }}
+                    />
                   </Col>
                   <Col md="6" className="mb-4">
                     <div className="d-flex justify-content-between mb-2">
                       <span className="f-14">Database Load</span>
                       <span className="fw-semibold">67%</span>
                     </div>
-                    <Progress value={67} color="info" style={{ height: "8px" }} />
+                    <Progress
+                      value={67}
+                      color="info"
+                      style={{ height: "8px" }}
+                    />
                   </Col>
                   <Col md="6" className="mb-4">
                     <div className="d-flex justify-content-between mb-2">
                       <span className="f-14">Server Uptime</span>
                       <span className="fw-semibold">99.9%</span>
                     </div>
-                    <Progress value={99.9} color="success" style={{ height: "8px" }} />
+                    <Progress
+                      value={99.9}
+                      color="success"
+                      style={{ height: "8px" }}
+                    />
                   </Col>
                 </Row>
 
@@ -155,36 +191,54 @@ const AdminDashboard = () => {
                     <div className="d-flex mb-3 pb-3 border-bottom">
                       <div
                         className="rounded-circle bg-success-light d-flex align-items-center justify-content-center me-3"
-                        style={{ width: "36px", height: "36px", minWidth: "36px" }}
+                        style={{
+                          width: "36px",
+                          height: "36px",
+                          minWidth: "36px",
+                        }}
                       >
                         <CheckCircle size={18} className="text-success" />
                       </div>
                       <div className="flex-grow-1">
-                        <p className="mb-1 f-14">New user registration completed</p>
+                        <p className="mb-1 f-14">
+                          New user registration completed
+                        </p>
                         <small className="text-muted">2 minutes ago</small>
                       </div>
                     </div>
                     <div className="d-flex mb-3 pb-3 border-bottom">
                       <div
                         className="rounded-circle bg-warning-light d-flex align-items-center justify-content-center me-3"
-                        style={{ width: "36px", height: "36px", minWidth: "36px" }}
+                        style={{
+                          width: "36px",
+                          height: "36px",
+                          minWidth: "36px",
+                        }}
                       >
                         <AlertCircle size={18} className="text-warning" />
                       </div>
                       <div className="flex-grow-1">
-                        <p className="mb-1 f-14">API rate limit reached for SMS Gateway</p>
+                        <p className="mb-1 f-14">
+                          API rate limit reached for SMS Gateway
+                        </p>
                         <small className="text-muted">15 minutes ago</small>
                       </div>
                     </div>
                     <div className="d-flex">
                       <div
                         className="rounded-circle bg-info-light d-flex align-items-center justify-content-center me-3"
-                        style={{ width: "36px", height: "36px", minWidth: "36px" }}
+                        style={{
+                          width: "36px",
+                          height: "36px",
+                          minWidth: "36px",
+                        }}
                       >
                         <Database size={18} className="text-info" />
                       </div>
                       <div className="flex-grow-1">
-                        <p className="mb-1 f-14">Database backup completed successfully</p>
+                        <p className="mb-1 f-14">
+                          Database backup completed successfully
+                        </p>
                         <small className="text-muted">1 hour ago</small>
                       </div>
                     </div>
@@ -228,21 +282,33 @@ const AdminDashboard = () => {
                       <small>CPU Usage</small>
                       <small className="text-success">45%</small>
                     </div>
-                    <Progress value={45} color="success" style={{ height: "6px" }} />
+                    <Progress
+                      value={45}
+                      color="success"
+                      style={{ height: "6px" }}
+                    />
                   </div>
                   <div className="mb-3">
                     <div className="d-flex justify-content-between mb-1">
                       <small>Memory</small>
                       <small className="text-info">62%</small>
                     </div>
-                    <Progress value={62} color="info" style={{ height: "6px" }} />
+                    <Progress
+                      value={62}
+                      color="info"
+                      style={{ height: "6px" }}
+                    />
                   </div>
                   <div className="mb-3">
                     <div className="d-flex justify-content-between mb-1">
                       <small>Disk Space</small>
                       <small className="text-warning">78%</small>
                     </div>
-                    <Progress value={78} color="warning" style={{ height: "6px" }} />
+                    <Progress
+                      value={78}
+                      color="warning"
+                      style={{ height: "6px" }}
+                    />
                   </div>
                 </div>
               </CardBody>
@@ -290,7 +356,10 @@ const AdminDashboard = () => {
                 <p className="text-muted f-13">
                   Manage users, assign roles, and monitor activity
                 </p>
-                <a href={`${process.env.PUBLIC_URL}/admin/users`} className="btn btn-sm btn-primary">
+                <a
+                  href={`${process.env.PUBLIC_URL}/admin/users`}
+                  className="btn btn-sm btn-primary"
+                >
                   View Users
                 </a>
               </CardBody>
@@ -304,7 +373,10 @@ const AdminDashboard = () => {
                 <p className="text-muted f-13">
                   Configure roles and manage access permissions
                 </p>
-                <a href={`${process.env.PUBLIC_URL}/admin/roles`} className="btn btn-sm btn-success">
+                <a
+                  href={`${process.env.PUBLIC_URL}/admin/roles`}
+                  className="btn btn-sm btn-success"
+                >
                   Manage Roles
                 </a>
               </CardBody>
@@ -318,7 +390,10 @@ const AdminDashboard = () => {
                 <p className="text-muted f-13">
                   Monitor and manage all API integrations
                 </p>
-                <a href={`${process.env.PUBLIC_URL}/admin/api-status`} className="btn btn-sm btn-info">
+                <a
+                  href={`${process.env.PUBLIC_URL}/admin/api-status`}
+                  className="btn btn-sm btn-info"
+                >
                   View Status
                 </a>
               </CardBody>

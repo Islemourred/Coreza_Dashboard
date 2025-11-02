@@ -1,4 +1,4 @@
-import  { Fragment, useContext, useEffect } from "react";
+import { Fragment, useContext, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -14,36 +14,41 @@ import Loader from "./Loader";
 
 const Layout = ({ children, classNames, ...rest }) => {
   const navigate = useNavigate();
-  const {   setDefaultClass, setTogglSidebar ,sidebar_types } =
+  const { setDefaultClass, setTogglSidebar, sidebar_types } =
     useContext(CheckContext);
   const { setIsVertical } = useContext(ProductContext);
   const location = useLocation();
   const queryData = location?.search?.split("=")[1]?.toString();
   const { animation } = useContext(AnimationThemeContext);
   const animationTheme =
-  localStorage.getItem("animation") ||
-  animation ||
-  ConfigDB.data.router_animation;
+    localStorage.getItem("animation") ||
+    animation ||
+    ConfigDB.data.router_animation;
   const sidebarType = localStorage.getItem("sidebar_types");
-  let sidebar_types1 = (queryData === "compact-wrapper" || queryData === "horizontal-wrapper")? queryData: localStorage.getItem('sidebar_types') || ConfigDB.data.settings.sidebar.type || sidebar_types;
+  let sidebar_types1 =
+    queryData === "compact-wrapper" || queryData === "horizontal-wrapper"
+      ? queryData
+      : localStorage.getItem("sidebar_types") ||
+        ConfigDB.data.settings.sidebar.type ||
+        sidebar_types;
 
-const sideBarReload = ()=>{
-  if (sidebarType === "horizontal-wrapper") {
-    if (window.innerWidth <= 1200) {
-      navigate({ search: `?sidebar=compact-wrapper` });
-      setDefaultClass(true);
-      sidebar_types1= "compact-wrapper"
-    } else {
-      navigate({ search: `?sidebar=horizontal-wrapper` });
-      setDefaultClass(false);
+  const sideBarReload = () => {
+    if (sidebarType === "horizontal-wrapper") {
+      if (window.innerWidth <= 1200) {
+        navigate({ search: `?sidebar=compact-wrapper` });
+        setDefaultClass(true);
+        sidebar_types1 = "compact-wrapper";
+      } else {
+        navigate({ search: `?sidebar=horizontal-wrapper` });
+        setDefaultClass(false);
+      }
     }
-  }
-} 
-  useEffect(() => { 
-    sideBarReload()
+  };
+  useEffect(() => {
+    sideBarReload();
     setDefaultClass(true);
     window.addEventListener("resize", () => {
-      sideBarReload()
+      sideBarReload();
       if (window.innerWidth - 440 <= 759) {
         setTogglSidebar(true);
       } else {
@@ -57,7 +62,6 @@ const sideBarReload = ()=>{
     });
   }, []);
 
-
   return (
     <Fragment>
       <Loader />
@@ -68,7 +72,12 @@ const sideBarReload = ()=>{
           <SideBar />
           <div className="page-body">
             <TransitionGroup {...rest}>
-              <CSSTransition key={location.key} timeout={100} classNames={animationTheme} unmountOnExit>
+              <CSSTransition
+                key={location.key}
+                timeout={100}
+                classNames={animationTheme}
+                unmountOnExit
+              >
                 <div>
                   <Outlet />
                 </div>
